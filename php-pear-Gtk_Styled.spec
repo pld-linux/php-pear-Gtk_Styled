@@ -31,9 +31,17 @@ bar but allow the user to have better control over the look and feel.
 
 In PEAR status of this package is: %{_status}.
 
-#%description -l pl
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+O ile mo¿na kontrolowaæ niektóre elementy styli GtkScrollBara, innych
+elementów nie da siê kontrolowaæ tak ³atwo. Rzeczy takie jak obrazki
+na pocz±tku i koñcu (zwykle strza³ki) i pasek przesuwania przeci±gany
+w celu przewiniêcia elementów nie mog± byæ zmienione. Prowadzi to do
+aplikacji, które musz± byæ zgodne z wygl±dem systemów okienkowych albo
+wygl±daj± niekompletnie. Celem tej rodziny klas PHP-GTK jest
+dostarczenie takiej samej funkcjonalno¶ci jak normalny pasek
+przesuwania, ale daj±cej lepsz± kontrolê nad wygl±dem i zachowaniem.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
