@@ -8,16 +8,21 @@ Summary:	%{_pearname} - PHP-GTK pseudo-widgets that mimic GtkData based objects
 Summary(pl):	%{_pearname} - pseudo widgety na¶laduj±ce oparte na GtkData obiekty
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
-Release:	0.beta1
+%define	_beta beta1
+%define	_rel 0.2
+Release:	0.%{_beta}.%{_rel}
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}beta1.tgz
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
 # Source0-md5:	5c5d4364259b066c187aabb78d48903a
 URL:		http://pear.php.net/package/Gtk_Styled/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# included in data/
+%define		_noautoreq 'pear(data/Gtk_Styled/Buttons.php)'
 
 %description
 While it is possible to control some style elements of a GtkScrollBar,
@@ -44,21 +49,20 @@ przesuwania, ale daj±cej lepsz± kontrolê nad wygl±dem i zachowaniem.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/{data/%{_class}_%{_subclass},%{_class}/%{_subclass}}
-
-install %{_pearname}-%{version}beta1/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-mv -f $RPM_BUILD_ROOT%{php_pear_dir}/{%{_class}/%{_subclass},data/%{_class}_%{_subclass}}/Buttons.php
-rm -f $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/example.php
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}beta1/example.php
+%doc install.log
+%doc docs/%{_pearname}/*
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/data/Gtk_Styled
