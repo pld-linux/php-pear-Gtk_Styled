@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - PHP-GTK pseudo-widgets that mimic GtkData based objects
-Summary(pl):	%{_pearname} - pseudo widgety na¶laduj±ce oparte na GtkData obiekty
+Summary(pl.UTF-8):   %{_pearname} - pseudo widgety naÅ›ladujÄ…ce oparte na GtkData obiekty
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 %define	_beta beta1
@@ -38,15 +38,15 @@ bar but allow the user to have better control over the look and feel.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-O ile mo¿na kontrolowaæ niektóre elementy styli GtkScrollBara, innych
-elementów nie da siê kontrolowaæ tak ³atwo. Rzeczy takie jak obrazki
-na pocz±tku i koñcu (zwykle strza³ki) i pasek przesuwania przeci±gany
-w celu przewiniêcia elementów nie mog± byæ zmienione. Prowadzi to do
-aplikacji, które musz± byæ zgodne z wygl±dem systemów okienkowych albo
-wygl±daj± niekompletnie. Celem tej rodziny klas PHP-GTK jest
-dostarczenie takiej samej funkcjonalno¶ci jak normalny pasek
-przesuwania, ale daj±cej lepsz± kontrolê nad wygl±dem i zachowaniem.
+%description -l pl.UTF-8
+O ile moÅ¼na kontrolowaÄ‡ niektÃ³re elementy styli GtkScrollBara, innych
+elementÃ³w nie da siÄ™ kontrolowaÄ‡ tak Å‚atwo. Rzeczy takie jak obrazki
+na poczÄ…tku i koÅ„cu (zwykle strzaÅ‚ki) i pasek przesuwania przeciÄ…gany
+w celu przewiniÄ™cia elementÃ³w nie mogÄ… byÄ‡ zmienione. Prowadzi to do
+aplikacji, ktÃ³re muszÄ… byÄ‡ zgodne z wyglÄ…dem systemÃ³w okienkowych albo
+wyglÄ…dajÄ… niekompletnie. Celem tej rodziny klas PHP-GTK jest
+dostarczenie takiej samej funkcjonalnoÅ›ci jak normalny pasek
+przesuwania, ale dajÄ…cej lepszÄ… kontrolÄ™ nad wyglÄ…dem i zachowaniem.
 
 Ta klasa ma w PEAR status: %{_status}.
 
