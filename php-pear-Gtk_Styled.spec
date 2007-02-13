@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - PHP-GTK pseudo-widgets that mimic GtkData based objects
-Summary(pl.UTF-8):   %{_pearname} - pseudo widgety naśladujące oparte na GtkData obiekty
+Summary(pl.UTF-8):	%{_pearname} - pseudo widgety naśladujące oparte na GtkData obiekty
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 %define	_beta beta1
