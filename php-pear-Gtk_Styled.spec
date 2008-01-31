@@ -3,13 +3,12 @@
 %define		_subclass	Styled
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
+%define		_beta beta1
+%define		_rel 1
 Summary:	%{_pearname} - PHP-GTK pseudo-widgets that mimic GtkData based objects
 Summary(pl.UTF-8):	%{_pearname} - pseudo widgety naśladujące oparte na GtkData obiekty
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
-%define	_beta beta1
-%define	_rel 0.2
 Release:	0.%{_beta}.%{_rel}
 License:	PHP 2.02
 Group:		Development/Languages/PHP
