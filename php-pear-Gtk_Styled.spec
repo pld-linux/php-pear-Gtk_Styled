@@ -1,19 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Gtk
 %define		_subclass	Styled
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-%define		_beta beta1
-%define		_rel 2
 Summary:	%{_pearname} - PHP-GTK pseudo-widgets that mimic GtkData based objects
 Summary(pl.UTF-8):	%{_pearname} - pseudo widgety naśladujące oparte na GtkData obiekty
 Name:		php-pear-%{_pearname}
-Version:	0.9.0
-Release:	0.%{_beta}.%{_rel}
+Version:	1.0.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_beta}.tgz
-# Source0-md5:	5c5d4364259b066c187aabb78d48903a
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	6c81b1629a767fe0f9d11af403b38699
 URL:		http://pear.php.net/package/Gtk_Styled/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
